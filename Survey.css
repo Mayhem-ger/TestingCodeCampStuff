@@ -9,18 +9,35 @@ justify-content: center;
 }
 
 .flex-container {
-  display: flex;
-  justify-content: space-around;
-  width: 75%;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
   background-color: lightgrey;
-  padding: 2rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: grid;
 }
 
-.flex-container-test {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+.flex-container-survey-group {
+  justify-content: center;
+  text-align: justify;
+  width: 90%;
   height: auto;
   background-color: red;
-  padding: 2rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+}
+
+.flex-container-survey-items {
+  justify-content: center;
+  text-align: justify;
+  width: 90%;
+  height: auto;
+  background-color: red;
+  padding: 1rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+  grid-row-gap: 10px;
 }
