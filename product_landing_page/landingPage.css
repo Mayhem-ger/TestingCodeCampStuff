@@ -17,6 +17,11 @@ img {
   padding: 5px 5px 5px 5px;
 }
 
+.feature-img {
+  height: 50%;
+  width: 50%;
+}
+
 .header {
   text-align: center;
   font-size: 3em;
@@ -29,62 +34,33 @@ img {
   background: LightGray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
+  grid-template-areas:
+  "navbar navbar navbar"
+  "headline headline headline"
+  "features features features"
+  "video video video"
+  "submit submit submit"
+  "pricing pricing pricing"
+
 }
 
-/*.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-content:flex-start;
-}*/
-
-/*.container-vertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: inherit;
-  align-content: inherit;
-  width: auto;
-  height: auto;
-}*/
-
-/*.container-horizontal {
-  display: inherit;
-  flex-direction: column;
-  justify-content: inherit;
-  align-content: inherit;
-  width: auto;
-  height: auto;
-  flex-wrap: nowrap;
-}*/
-
-/*.item-vertical {
-  flex-grow: 1;
-  height: 100px;
-  padding: 5px;
-  width: auto;
-  height: auto;
-  background: tomato;
+.grid-features {
   font-size: 1em;
-  text-align: center;
-}*/
-
-/*.item-horizontal {
-  flex-grow: 1;
-  height: 100px;
-  padding: 5px;
-  width: auto;
-  height: auto;
-  background: tomato;
-  font-size: 1em;
-  text-align: center;
-}*/
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid gap: 10px;
+}
 
 .nav-bar {
   background-color: #333;
   overflow: hidden;
   width: 100%;
   float: right;
+  grid-area: navbar;
 }
 
 .nav-bar a {
@@ -108,21 +84,16 @@ img {
 
 .d1 {
   background:LightSkyBlue;
-  grid-column: 1/4;
 }
 .d2 {
   background:LightSalmon;
-  grid-column: 1/2;
 }
 .d3 {
   background:PaleTurquoise;
-  grid-column: 2/4;
 }
 .d4 {
   background:LightPink;
-  grid-column: 1/4;
 }
 .d5 {
   background:PaleGreen;
-  grid-column: 1/2;
 }
