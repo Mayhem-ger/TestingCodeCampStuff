@@ -23,22 +23,32 @@ img {
   padding: 2rem 2rem 2rem 2rem;
 }
 
-.container {
-  displa: flex;
+.grid {
+  font-size: 1em;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/*.container {
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-content:flex-start;
-}
-.container-vertical {
-  display: inherit;
+}*/
+
+/*.container-vertical {
+  display: flex;
   flex-direction: column;
   justify-content: inherit;
   align-content: inherit;
   width: auto;
   height: auto;
-}
+}*/
 
-.container-horizontal {
+/*.container-horizontal {
   display: inherit;
   flex-direction: column;
   justify-content: inherit;
@@ -46,9 +56,9 @@ img {
   width: auto;
   height: auto;
   flex-wrap: nowrap;
-}
+}*/
 
-.item-vertical {
+/*.item-vertical {
   flex-grow: 1;
   height: 100px;
   padding: 5px;
@@ -57,9 +67,9 @@ img {
   background: tomato;
   font-size: 1em;
   text-align: center;
-}
+}*/
 
-.item-horizontal {
+/*.item-horizontal {
   flex-grow: 1;
   height: 100px;
   padding: 5px;
@@ -68,7 +78,7 @@ img {
   background: tomato;
   font-size: 1em;
   text-align: center;
-}
+}*/
 
 .nav-bar {
   background-color: #333;
@@ -94,4 +104,25 @@ img {
 .nav-bar a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.d1 {
+  background:LightSkyBlue;
+  grid-column: 1/4;
+}
+.d2 {
+  background:LightSalmon;
+  grid-column: 1/2;
+}
+.d3 {
+  background:PaleTurquoise;
+  grid-column: 2/4;
+}
+.d4 {
+  background:LightPink;
+  grid-column: 1/4;
+}
+.d5 {
+  background:PaleGreen;
+  grid-column: 1/2;
 }
